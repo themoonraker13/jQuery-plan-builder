@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#container legend{
+    font-size: larger;
+}
+
+#palette {
+    clear: both;
+    margin: 5px;
+    min-width: 400px;
+    min-height: 80px;
+}
+
+.paletteComponent {
+    width: 30px;
+    height: 30px;
+    padding: 0.5cm;
+    border: 1px solid;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#draggableA {
+    background-color: blue;
+}
+
+#draggableB {
+    background-color: chocolate;
+}
+
+#canvas {
+    border: solid;
+    clear: both;
+    height: 400px;
+    width: 1044px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.ui-resizable-handle {
+    background: orange;
+    border: 1px solid #FFF;
+    width: 9px;
+    height: 9px;
+    z-index: 2;
+}
+
+.ui-resizable-se {
+    right: -5px;
+    bottom: -5px;
+}
+
+.ui-rotatable-handle {
+    background: green;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    height: 10px;
+    left: 50%;
+    margin: 0 0 0 -5px;
+    position: absolute;
+    top: -5px;
+    width: 10px;
+}
+
+.ui-rotatable-handle.ui-draggable-dragging {
+    visibility: hidden;
+}
